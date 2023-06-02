@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect4</title>
+
+    <link rel="stylesheet" href="connect4.css">
+</head>
+
+<body>
+
+
+    <h1>Connect4</h1>
+
+    <form id="form">
+        <label for="person1"><b>player1:</b></label>
+        <input type="text" id="person1" required placeholder="  Enter your name:     ">
+        <br>
+        <label for="person2"><b>player2:</b></label>
+        <input type="text" id="person2" required placeholder="  Enter your name: ">
+        <br>
+        <div id="buttons">
+            <button id="submit" type="submit">Start</button>
+            <button id="refreshButton">Refresh</button>
+        </div>
+
+
+    </form>
+    <div id="names"></div>
+    <h1 id="winner"></h1>
+    <div id="board"></div>
+
+    <table id="taebl">
+    </table>
+    <script src="connect4.js"></script>
+</body>
+
+</html>

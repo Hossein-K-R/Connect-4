@@ -1,0 +1,139 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  height: 100vh;
+
+}
+
+#board {
+  height: 540px;
+  width: 560px;
+  background-color: blue;
+  border: 10px solid navy;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  border: 5px solid navy;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red-piece {
+  background-color: red;
+}
+
+.yellow-piece {
+  background-color: yellow;
+}
+
+#refreshButton{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  min-width: 120px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  margin: 10px;
+  overflow: hidden;
+  padding: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+#submit{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    rgba(85, 221, 119, 0.667) 0,
+    #47a8aa 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  min-width: 120px;
+  box-shadow: rgba(45, 35, 50, 0.4) 0 2px 4px,
+    rgba(80, 95, 66, 0.3) 0 7px 13px -3px, rgba(232, 100, 150, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  margin: 10px;
+  overflow: hidden;
+  padding: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+#refreshButton:focus,#submit:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#refreshButton:hover,#submit:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#refreshButton:active,#submit:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#person1, #person2{
+  min-width: 250px;
+  border-radius: 8px;
+  margin: 10px 15px;
+  min-height: 25px;
+}
+
+#buttons{
+  margin-left: 55px;
+}
+
+#winner{
+  color:rgb(0, 128, 81);
+ font-weight: bolder;
+}
